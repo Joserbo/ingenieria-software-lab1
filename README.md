@@ -1,5 +1,5 @@
 # ingenieria-software-lab1
-Nombre: Jose Ricardo Bustamante Orellana
+Nombre: Jose Ricardo Bustamante Orellana /n
 Carne: 1290-15-5492
 
 Laboratorio #1 del curso de Ingenieria de Software
