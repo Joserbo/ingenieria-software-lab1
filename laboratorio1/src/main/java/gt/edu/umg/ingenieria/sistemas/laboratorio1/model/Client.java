@@ -1,22 +1,31 @@
 package gt.edu.umg.ingenieria.sistemas.laboratorio1.model;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-/**
- *
- * @author Josué Barillas (jbarillas)
- */
+
 @Entity
+@Table(name="client")
 public class Client implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+    @Column(name = "firstName")
     private String firstName;
+    @Column(name = "lastName")
     private String lastName;
+    @Column(name = "nit")
     private String nit;
+    @Column(name = "phone")
     private String phone;
+    @Column(name = "address")
     private String address;
 
     public Client() {
